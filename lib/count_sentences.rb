@@ -1,3 +1,4 @@
+ class
  def question?
     if self.end_with?("?")
       true
