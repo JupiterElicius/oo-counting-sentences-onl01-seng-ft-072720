@@ -1,20 +1,20 @@
-require 'pry'
-
-class String
-
-  def sentence?
-    
-  end
-
-  def question?
-
+ def question?
+    if self.end_with?("?")
+      true
+    else
+      false
+    end
   end
 
   def exclamation?
-
+    if self.end_with?("!")
+      true
+    else
+      false
+    end
   end
 
   def count_sentences
-
+    split(/[.!?]/).reject{|sentence| sentence.empty?}.count
   end
 end
