@@ -1,4 +1,4 @@
- class
+
  def question?
     if self.end_with?("?")
       true
@@ -18,4 +18,3 @@
   def count_sentences
     split(/[.!?]/).reject{|sentence| sentence.empty?}.count
   end
-end
